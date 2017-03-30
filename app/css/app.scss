@@ -1,0 +1,33 @@
+@import '_fonts';
+
+body {
+    margin-top: 50px; @extend .openSans; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.heroDiv { 
+    .imgSize { 
+        height: 250px; 
+        color: white; 
+        background-size: cover; 
+        .section-lead { color: red; }
+    }
+    .box1 {
+        background-image: url("http://3.bp.blogspot.com/-6b_GUxyZVfs/UBWQ8LQ2Y1I/AAAAAAAAFuY/uPN-MTnMjGo/w1200-h630-p-k-nu/Hackers+Are+Invited+To+Attack+Facebook%27s+Corporate+Network.png");
+    }
+    .box2{
+        background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/03/04/18/Facebook.jpg");
+    }
+    .box3{
+        background-image: url("https://static01.nyt.com/images/2012/02/04/business/Facebookjp/Facebookjp-jumbo.jpg");
+    }
+}
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .imgSize { height: 100px; }
+    .section-heading { font-size: 15px; }
+    .section-lead { font-size: 10px; }
+}
